@@ -1,4 +1,4 @@
-# JWT-Authentication
+# JSONServer + JWT Auth
 
 npm install
 npm run start-auth
