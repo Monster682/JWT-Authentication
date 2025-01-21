@@ -102,7 +102,7 @@ server.use(/^(?!\/auth).*$/,  (req, res, next) => {
     let verifyTokenResult;
      verifyTokenResult = verifyToken(req.headers.authorization.split(' ')[1]);
 
-     if (verifyTokenResult instanceof Error) {
+     if (verifyTokenResult instance of Error) {
        const status = 401
        const message = 'Access token not provided'
        res.status(status).json({status, message})
